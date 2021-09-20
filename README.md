@@ -6,8 +6,8 @@ This is a step-by-step challenge that guides you through the entire process of t
 
 **Important: Aside from the previous App Challenges, you will also be using what you've learned from hands-on activities**
 
-# What You Will Be Making - An app that displays the real-time weather data of a city
-<img width="1381" alt="weather data" src="https://user-images.githubusercontent.com/87120195/131660031-e743b9cc-3520-4eec-a9a0-3b264439c58a.png">
+# What You Will Be Making - A simple chat app the shows messages in real-time
+<img width="1381" alt="weather data" src="app-challenge-final.gif">
 
 
 
