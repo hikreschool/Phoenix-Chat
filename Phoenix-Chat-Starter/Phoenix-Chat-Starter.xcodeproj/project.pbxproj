@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49338EFD26F88F2D00C4BF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338EFC26F88F2D00C4BF67 /* AppDelegate.swift */; };
+		49338EFF26F88F2D00C4BF67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338EFE26F88F2D00C4BF67 /* SceneDelegate.swift */; };
+		49338F0426F88F2D00C4BF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49338F0226F88F2D00C4BF67 /* Main.storyboard */; };
+		49338F0626F88F3000C4BF67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49338F0526F88F3000C4BF67 /* Assets.xcassets */; };
+		49338F0926F88F3000C4BF67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49338F0726F88F3000C4BF67 /* LaunchScreen.storyboard */; };
+		49338F1426F88F3000C4BF67 /* Phoenix_Chat_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F1326F88F3000C4BF67 /* Phoenix_Chat_StarterTests.swift */; };
+		49338F1F26F88F3000C4BF67 /* Phoenix_Chat_StarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F1E26F88F3000C4BF67 /* Phoenix_Chat_StarterUITests.swift */; };
+		49338F4026F88FBC00C4BF67 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F3F26F88FBC00C4BF67 /* Message.swift */; };
+		49338F4526F88FD100C4BF67 /* futuristic_ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49338F4426F88FD100C4BF67 /* futuristic_ringtone.mp3 */; };
+		49338F4A26F88FFA00C4BF67 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F4926F88FFA00C4BF67 /* WelcomeViewController.swift */; };
+		49338F5D26F8902A00C4BF67 /* SecondMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49338F5926F8902A00C4BF67 /* SecondMessageCell.xib */; };
+		49338F5E26F8902A00C4BF67 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49338F5A26F8902A00C4BF67 /* MessageCell.xib */; };
+		49338F5F26F8902A00C4BF67 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F5B26F8902A00C4BF67 /* CustomMessageCell.swift */; };
+		49338F6026F8902A00C4BF67 /* SecondCustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F5C26F8902A00C4BF67 /* SecondCustomMessageCell.swift */; };
+		49338F6926F8975300C4BF67 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F6826F8975300C4BF67 /* RegisterViewController.swift */; };
+		49338F6E26F8983500C4BF67 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F6D26F8983500C4BF67 /* LogInViewController.swift */; };
+		49338F7326F898D500C4BF67 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338F7226F898D500C4BF67 /* ChatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49338F1026F88F3000C4BF67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49338EF126F88F2D00C4BF67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49338EF826F88F2D00C4BF67;
+			remoteInfo = "Phoenix-Chat-Starter";
+		};
+		49338F1B26F88F3000C4BF67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49338EF126F88F2D00C4BF67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49338EF826F88F2D00C4BF67;
+			remoteInfo = "Phoenix-Chat-Starter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49338EF926F88F2D00C4BF67 /* Phoenix-Chat-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phoenix-Chat-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49338EFC26F88F2D00C4BF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49338EFE26F88F2D00C4BF67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49338F0326F88F2D00C4BF67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49338F0526F88F3000C4BF67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49338F0826F88F3000C4BF67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49338F0A26F88F3000C4BF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49338F0F26F88F3000C4BF67 /* Phoenix-Chat-StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phoenix-Chat-StarterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49338F1326F88F3000C4BF67 /* Phoenix_Chat_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phoenix_Chat_StarterTests.swift; sourceTree = "<group>"; };
+		49338F1526F88F3000C4BF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49338F1A26F88F3000C4BF67 /* Phoenix-Chat-StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phoenix-Chat-StarterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49338F1E26F88F3000C4BF67 /* Phoenix_Chat_StarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phoenix_Chat_StarterUITests.swift; sourceTree = "<group>"; };
+		49338F2026F88F3000C4BF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49338F3F26F88FBC00C4BF67 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		49338F4426F88FD100C4BF67 /* futuristic_ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = futuristic_ringtone.mp3; sourceTree = "<group>"; };
+		49338F4926F88FFA00C4BF67 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		49338F5926F8902A00C4BF67 /* SecondMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondMessageCell.xib; sourceTree = "<group>"; };
+		49338F5A26F8902A00C4BF67 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		49338F5B26F8902A00C4BF67 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		49338F5C26F8902A00C4BF67 /* SecondCustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCustomMessageCell.swift; sourceTree = "<group>"; };
+		49338F6826F8975300C4BF67 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		49338F6D26F8983500C4BF67 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		49338F7226F898D500C4BF67 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49338EF626F88F2D00C4BF67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49338F0C26F88F3000C4BF67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49338F1726F88F3000C4BF67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49338EF026F88F2D00C4BF67 = {
+			isa = PBXGroup;
+			children = (
+				49338EFB26F88F2D00C4BF67 /* Phoenix-Chat-Starter */,
+				49338F1226F88F3000C4BF67 /* Phoenix-Chat-StarterTests */,
+				49338F1D26F88F3000C4BF67 /* Phoenix-Chat-StarterUITests */,
+				49338EFA26F88F2D00C4BF67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49338EFA26F88F2D00C4BF67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49338EF926F88F2D00C4BF67 /* Phoenix-Chat-Starter.app */,
+				49338F0F26F88F3000C4BF67 /* Phoenix-Chat-StarterTests.xctest */,
+				49338F1A26F88F3000C4BF67 /* Phoenix-Chat-StarterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49338EFB26F88F2D00C4BF67 /* Phoenix-Chat-Starter */ = {
+			isa = PBXGroup;
+			children = (
+				49338F3826F88F6300C4BF67 /* Supporting files */,
+				49338F3726F88F5A00C4BF67 /* Models */,
+				49338F3226F88F4900C4BF67 /* Controllers */,
+				49338F3626F88F5600C4BF67 /* Views */,
+				49338F0A26F88F3000C4BF67 /* Info.plist */,
+				49338F4426F88FD100C4BF67 /* futuristic_ringtone.mp3 */,
+			);
+			path = "Phoenix-Chat-Starter";
+			sourceTree = "<group>";
+		};
+		49338F1226F88F3000C4BF67 /* Phoenix-Chat-StarterTests */ = {
+			isa = PBXGroup;
+			children = (
+				49338F1326F88F3000C4BF67 /* Phoenix_Chat_StarterTests.swift */,
+				49338F1526F88F3000C4BF67 /* Info.plist */,
+			);
+			path = "Phoenix-Chat-StarterTests";
+			sourceTree = "<group>";
+		};
+		49338F1D26F88F3000C4BF67 /* Phoenix-Chat-StarterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49338F1E26F88F3000C4BF67 /* Phoenix_Chat_StarterUITests.swift */,
+				49338F2026F88F3000C4BF67 /* Info.plist */,
+			);
+			path = "Phoenix-Chat-StarterUITests";
+			sourceTree = "<group>";
+		};
+		49338F3226F88F4900C4BF67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49338F4926F88FFA00C4BF67 /* WelcomeViewController.swift */,
+				49338F6826F8975300C4BF67 /* RegisterViewController.swift */,
+				49338F6D26F8983500C4BF67 /* LogInViewController.swift */,
+				49338F7226F898D500C4BF67 /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49338F3626F88F5600C4BF67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49338F0226F88F2D00C4BF67 /* Main.storyboard */,
+				49338F0526F88F3000C4BF67 /* Assets.xcassets */,
+				49338F0726F88F3000C4BF67 /* LaunchScreen.storyboard */,
+				49338F6426F8902F00C4BF67 /* Custom Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49338F3726F88F5A00C4BF67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49338F3F26F88FBC00C4BF67 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49338F3826F88F6300C4BF67 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				49338EFC26F88F2D00C4BF67 /* AppDelegate.swift */,
+				49338EFE26F88F2D00C4BF67 /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		49338F6426F8902F00C4BF67 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49338F5B26F8902A00C4BF67 /* CustomMessageCell.swift */,
+				49338F5A26F8902A00C4BF67 /* MessageCell.xib */,
+				49338F5C26F8902A00C4BF67 /* SecondCustomMessageCell.swift */,
+				49338F5926F8902A00C4BF67 /* SecondMessageCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49338EF826F88F2D00C4BF67 /* Phoenix-Chat-Starter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49338F2326F88F3000C4BF67 /* Build configuration list for PBXNativeTarget "Phoenix-Chat-Starter" */;
+			buildPhases = (
+				49338EF526F88F2D00C4BF67 /* Sources */,
+				49338EF626F88F2D00C4BF67 /* Frameworks */,
+				49338EF726F88F2D00C4BF67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phoenix-Chat-Starter";
+			productName = "Phoenix-Chat-Starter";
+			productReference = 49338EF926F88F2D00C4BF67 /* Phoenix-Chat-Starter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49338F0E26F88F3000C4BF67 /* Phoenix-Chat-StarterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49338F2626F88F3000C4BF67 /* Build configuration list for PBXNativeTarget "Phoenix-Chat-StarterTests" */;
+			buildPhases = (
+				49338F0B26F88F3000C4BF67 /* Sources */,
+				49338F0C26F88F3000C4BF67 /* Frameworks */,
+				49338F0D26F88F3000C4BF67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49338F1126F88F3000C4BF67 /* PBXTargetDependency */,
+			);
+			name = "Phoenix-Chat-StarterTests";
+			productName = "Phoenix-Chat-StarterTests";
+			productReference = 49338F0F26F88F3000C4BF67 /* Phoenix-Chat-StarterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49338F1926F88F3000C4BF67 /* Phoenix-Chat-StarterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49338F2926F88F3000C4BF67 /* Build configuration list for PBXNativeTarget "Phoenix-Chat-StarterUITests" */;
+			buildPhases = (
+				49338F1626F88F3000C4BF67 /* Sources */,
+				49338F1726F88F3000C4BF67 /* Frameworks */,
+				49338F1826F88F3000C4BF67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49338F1C26F88F3000C4BF67 /* PBXTargetDependency */,
+			);
+			name = "Phoenix-Chat-StarterUITests";
+			productName = "Phoenix-Chat-StarterUITests";
+			productReference = 49338F1A26F88F3000C4BF67 /* Phoenix-Chat-StarterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49338EF126F88F2D00C4BF67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					49338EF826F88F2D00C4BF67 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					49338F0E26F88F3000C4BF67 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 49338EF826F88F2D00C4BF67;
+					};
+					49338F1926F88F3000C4BF67 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 49338EF826F88F2D00C4BF67;
+					};
+				};
+			};
+			buildConfigurationList = 49338EF426F88F2D00C4BF67 /* Build configuration list for PBXProject "Phoenix-Chat-Starter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49338EF026F88F2D00C4BF67;
+			productRefGroup = 49338EFA26F88F2D00C4BF67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49338EF826F88F2D00C4BF67 /* Phoenix-Chat-Starter */,
+				49338F0E26F88F3000C4BF67 /* Phoenix-Chat-StarterTests */,
+				49338F1926F88F3000C4BF67 /* Phoenix-Chat-StarterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49338EF726F88F2D00C4BF67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49338F4526F88FD100C4BF67 /* futuristic_ringtone.mp3 in Resources */,
+				49338F5E26F8902A00C4BF67 /* MessageCell.xib in Resources */,
+				49338F5D26F8902A00C4BF67 /* SecondMessageCell.xib in Resources */,
+				49338F0926F88F3000C4BF67 /* LaunchScreen.storyboard in Resources */,
+				49338F0626F88F3000C4BF67 /* Assets.xcassets in Resources */,
+				49338F0426F88F2D00C4BF67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49338F0D26F88F3000C4BF67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49338F1826F88F3000C4BF67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49338EF526F88F2D00C4BF67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49338F6026F8902A00C4BF67 /* SecondCustomMessageCell.swift in Sources */,
+				49338F4A26F88FFA00C4BF67 /* WelcomeViewController.swift in Sources */,
+				49338F6926F8975300C4BF67 /* RegisterViewController.swift in Sources */,
+				49338F5F26F8902A00C4BF67 /* CustomMessageCell.swift in Sources */,
+				49338F6E26F8983500C4BF67 /* LogInViewController.swift in Sources */,
+				49338F4026F88FBC00C4BF67 /* Message.swift in Sources */,
+				49338EFD26F88F2D00C4BF67 /* AppDelegate.swift in Sources */,
+				49338F7326F898D500C4BF67 /* ChatViewController.swift in Sources */,
+				49338EFF26F88F2D00C4BF67 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49338F0B26F88F3000C4BF67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49338F1426F88F3000C4BF67 /* Phoenix_Chat_StarterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49338F1626F88F3000C4BF67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49338F1F26F88F3000C4BF67 /* Phoenix_Chat_StarterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49338F1126F88F3000C4BF67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49338EF826F88F2D00C4BF67 /* Phoenix-Chat-Starter */;
+			targetProxy = 49338F1026F88F3000C4BF67 /* PBXContainerItemProxy */;
+		};
+		49338F1C26F88F3000C4BF67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49338EF826F88F2D00C4BF67 /* Phoenix-Chat-Starter */;
+			targetProxy = 49338F1B26F88F3000C4BF67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49338F0226F88F2D00C4BF67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49338F0326F88F2D00C4BF67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49338F0726F88F3000C4BF67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49338F0826F88F3000C4BF67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49338F2126F88F3000C4BF67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49338F2226F88F3000C4BF67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49338F2426F88F3000C4BF67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54N7YNN2NY;
+				INFOPLIST_FILE = "Phoenix-Chat-Starter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.your-name.Phoenix-Chat-Starter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49338F2526F88F3000C4BF67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54N7YNN2NY;
+				INFOPLIST_FILE = "Phoenix-Chat-Starter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.your-name.Phoenix-Chat-Starter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49338F2726F88F3000C4BF67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54N7YNN2NY;
+				INFOPLIST_FILE = "Phoenix-Chat-StarterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DerickX.Phoenix-Chat-StarterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phoenix-Chat-Starter.app/Phoenix-Chat-Starter";
+			};
+			name = Debug;
+		};
+		49338F2826F88F3000C4BF67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54N7YNN2NY;
+				INFOPLIST_FILE = "Phoenix-Chat-StarterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DerickX.Phoenix-Chat-StarterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phoenix-Chat-Starter.app/Phoenix-Chat-Starter";
+			};
+			name = Release;
+		};
+		49338F2A26F88F3000C4BF67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54N7YNN2NY;
+				INFOPLIST_FILE = "Phoenix-Chat-StarterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DerickX.Phoenix-Chat-StarterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Phoenix-Chat-Starter";
+			};
+			name = Debug;
+		};
+		49338F2B26F88F3000C4BF67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54N7YNN2NY;
+				INFOPLIST_FILE = "Phoenix-Chat-StarterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DerickX.Phoenix-Chat-StarterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Phoenix-Chat-Starter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49338EF426F88F2D00C4BF67 /* Build configuration list for PBXProject "Phoenix-Chat-Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49338F2126F88F3000C4BF67 /* Debug */,
+				49338F2226F88F3000C4BF67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49338F2326F88F3000C4BF67 /* Build configuration list for PBXNativeTarget "Phoenix-Chat-Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49338F2426F88F3000C4BF67 /* Debug */,
+				49338F2526F88F3000C4BF67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49338F2626F88F3000C4BF67 /* Build configuration list for PBXNativeTarget "Phoenix-Chat-StarterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49338F2726F88F3000C4BF67 /* Debug */,
+				49338F2826F88F3000C4BF67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49338F2926F88F3000C4BF67 /* Build configuration list for PBXNativeTarget "Phoenix-Chat-StarterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49338F2A26F88F3000C4BF67 /* Debug */,
+				49338F2B26F88F3000C4BF67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49338EF126F88F2D00C4BF67 /* Project object */;
+}
