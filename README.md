@@ -78,9 +78,9 @@ Step 10: Go back to terminal again and now do _pod install_. Wait until it's don
 
 **Part 2 - WelcomeViewController**
 
-Step 11: On the WelcomeViewController file, import Firebase on the top
+Step 11: In the WelcomeViewController file, import Firebase on the top
 
-Step 12: Paste this code inside ViewDidLoad()
+Step 12: To check if there's an active user every time you launch the app (meaning the user hasn't signed out), Paste this code inside ViewDidLoad()
     
 
              if Auth.auth().currentUser != nil {
@@ -93,7 +93,7 @@ Step 12: Paste this code inside ViewDidLoad()
 
 Step 13: On the RegisterViewController file, import Firebase on the top
 
-Step 14: Paste this code inside registerPressed()
+Step 14: To register or create a new user, paste this code inside registerPressed()
         
                 Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             
@@ -114,7 +114,7 @@ Step 14: Paste this code inside registerPressed()
 
 Step 15: On the LoginViewController file, import Firebase on the top
 
-Step 16: Paste this code inside loginPressed()
+Step 16: To login or signin a registered user, paste this code inside loginPressed()
         
               Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             
@@ -140,7 +140,7 @@ Step 17: Import these on top of the file
     import ChameleonFramework
     import AVFoundation
 
-Step 18: Go to cellForRowAt delegate method by our tableview and paste this block of code
+Step 18: To configure the display of messages in our tableview, go to cellForRowAt delegate method by our tableview and paste this block of code
 
       
         if messageAtIndexPathRow.sender == Auth.auth().currentUser?.email as String? {
@@ -176,14 +176,14 @@ Step 18: Go to cellForRowAt delegate method by our tableview and paste this bloc
             return cell
         }
         
-Step 19: For storing every message on our Firestore database, paste this block of code on our sendPressed() 
+Step 19: To store every message on our Firestore database, paste this block of code on our sendPressed() 
 
        let firestoreDB = Firestore.firestore()
         firestoreDB.collection("Messages").addDocument(data: ["Sender":Auth.auth().currentUser?.email, "Message":messageTextfield.text!, "Time": Timestamp().dateValue()])
         
         firestoreDB.collection("Messages").order(by: "Time")
         
-Step 20: For loading every message from our Firestore database, paste this block of code on our retrieveMessages()
+Step 20: To load every message from our Firestore database, paste this block of code on our retrieveMessages()
 
        
         let firestoreDB = Firestore.firestore()
