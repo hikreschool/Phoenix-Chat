@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Phoenix_Chat_Starter_Phoenix_Chat_StarterUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Phoenix_Chat_Starter_Phoenix_Chat_StarterUITests
+@end

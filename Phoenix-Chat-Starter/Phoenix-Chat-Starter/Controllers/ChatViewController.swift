@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+import Firebase
+import ChameleonFramework
+import AVFoundation
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
@@ -59,11 +61,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // making sure the send message button is disabled at launch
         sendButton.isEnabled = false
-
-        
-    
-        
-        
+        retrieveMessages()		
     }
 
 
@@ -75,12 +73,30 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let messageAtIndexPathRow = messageArray[indexPath.row]
-        
-        
-        // Paste here the complete configuration for cellForRowAt
-        
-        
-        
+        if messageAtIndexPathRow.sender == Auth.auth().currentUser?.email as String? {
+            
+            // set background to blue if message is from logged in user
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: "customMessageCell2") as! SecondCustomMessageCell
+            // displays the data to cell UI
+            cell2.messageBody.text = messageArray[indexPath.row].messageBody
+            cell2.senderUsername.text = messageArray[indexPath.row].sender
+//            cell2.avatarImageView.image = UIImage(named: "owl2")
+            
+            // Set the background color to blue if message is from current user
+            cell2.messageBackground.backgroundColor = UIColor.flatBlue()
+            
+            return cell2
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell") as! CustomMessageCell
+            cell.messageBody.text = messageArray[indexPath.row].messageBody
+            cell.senderUsername.text = messageArray[indexPath.row].sender
+   //         cell.avatarImageView.image = UIImage(named: "owl")
+            
+            // set background color to orange if message is from another user
+            cell.messageBackground.backgroundColor = UIColor.flatOrange()
+            
+            return cell
+        }
         
     }
     
@@ -160,25 +176,23 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBAction func sendPressed(_ sender: AnyObject) {
         
-       print("send pressed is tapped")
+        print("send pressed is tapped")
 
         playChatSound()
+ 
+        // This block of code will handle the storing of the new message on our Firestore database
+        // Paste here
+        
+        let firestoreDB = Firestore.firestore()
+        firestoreDB.collection("Messages").addDocument(data: ["Sender":Auth.auth().currentUser?.email! as Any, "Message":messageTextfield.text!, "Time": Timestamp().dateValue()])
+            
+        firestoreDB.collection("Messages").order(by: "Time")
         
         self.messageTextfield.endEditing(true)
         self.messageTextfield.isEnabled = true
         self.sendButton.isEnabled = true
         self.messageTextfield.text = ""
         self.configureTableView()
-        
-        
-        // This block of code will handle the storing of the new message on our Firestore database
-        // Paste here
-        
-        
-        
-        
-        
-        
         
     }
     
@@ -189,13 +203,30 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
      
      // Paste the block of code that handles the loading of the messages from our Firestore database and that loads on tableview
 
-        
-        
-        
-        
-        
-        
-        
+        let firestoreDB = Firestore.firestore()
+        firestoreDB.collection("Messages").order(by: "Time", descending: false).addSnapshotListener { (snapshot, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            
+            if let snapshot = snapshot {
+                let documents = snapshot.documents
+                var newMessageArray = [Message]()
+                for document in documents {
+                    guard let messageSender = document.data()["Sender"] as? String else { return }
+                    guard let messageBody = document.data()["Message"] as? String else { return }
+                    let message = Message()
+                    message.messageBody = messageBody
+                    message.sender = messageSender
+                    newMessageArray.append(message)
+                }
+                self.playChatSound()
+                self.messageArray = newMessageArray
+                self.messageTableView.reloadData()
+                self.scrollToBottom()
+            }
+        }
+
     }
 
 
@@ -209,7 +240,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         //2. Add the text field. You can configure it however you need.
         alertController.addTextField { (textField) in
-            textField.placeholder = "Type exactly \"Arrivederci\" to complete."
+            textField.placeholder = "Type exactly \"Mama\" to complete."
             
         }
         
@@ -220,7 +251,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             print("Text field: \(textField?.text)")
             
             
-            if textField?.text  == "Arrivederci" {
+            if textField?.text  == "Mama" {
                 
                 do {
                    
@@ -228,9 +259,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                     // Paste here the line of code that logs out the user from the app
                 
                     
-                    
-                    
-                    
+                    try Auth.auth().signOut()
                     
                     
                     self.navigationController?.popToRootViewController(animated: true)
