@@ -11,14 +11,8 @@ This is a step-by-step challenge that guides you through the entire process of t
 
 
 
-# What You Will Be Learning
 
-1. Networking - https://www.youtube.com/watch?v=Rqr3w8scm2E
-2. JSON - https://www.youtube.com/watch?v=_TrPJQWD8qs
-3. APIS - https://www.youtube.com/watch?v=s7wmiS2mSXY
-
-
-# Important keywords
+# What will you be learning
 1.Firebase
 2. Authentication
 3. Firestore
