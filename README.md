@@ -74,7 +74,9 @@ Open the new pod file and copy and paste the code under the Pods for Phoenix-Cha
 
 Step 10: Go back to terminal again and now do _pod install_. Wait until it's done. Then open your project using _.xcworkspace_
 
+Step 11: Replace your Main Storyboard with this Main Storyboard file
 
+[Main.storyboard.zip](https://github.com/hikreschool/Phoenix-Chat/files/7195482/Main.storyboard.zip)
 
 **Part 2 - WelcomeViewController**
 
