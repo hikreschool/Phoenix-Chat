@@ -60,7 +60,7 @@ Step 7: Proceed to the rest of the Firebase setup and follow the rest of the ins
 Step 8: After finishing all the setup, go to your newly created project and go the Authentication section and enable the Email/Password Sign-in method
 <img width="1401" alt="Screen Shot 2021-09-20 at 6 05 38 PM" src="https://user-images.githubusercontent.com/87120195/133985746-7e1fdab6-9e0c-40e8-8a5c-8ea70c7b6228.png">
 
-Step 9: Navigate to your project directory and folder and initialize your pod using the command pod init in the terminal. Open the new pod file copy and paste the code under the Pods for Phoenix-Chat
+Step 9: Navigate to your project directory and folder and initialize your pod using the command _pod init _in the terminal. Open the new pod file copy and paste the code under the Pods for Phoenix-Chat
 
 pod 'Firebase'
 pod 'Firebase/Auth'
@@ -72,10 +72,19 @@ pod 'ChameleonFramework'
 
 Note: Make sure you uncomment the _use_frameworks and target platform :ios, '9.0'_
 
-Step 4: Go back to terminal again and now do _pod install_. Wait until it's done. Then open your project using .xcworkspace
+Step 10: Go back to terminal again and now do _pod install_. Wait until it's done. Then open your project using .xcworkspace
 
-**Part 2**
+**Part 2 - WelcomeViewController**
 
+Step 11: On the WelcomeViewController file, import Firebase on the top
+
+Step 12: Paste this code inside ViewDidLoad
+
+ if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "goToChat", sender: self)
+        }
+
+**Part 3 - RegisterViewController**
 
         
 
