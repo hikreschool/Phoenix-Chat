@@ -79,10 +79,12 @@ Step 10: Go back to terminal again and now do _pod install_. Wait until it's don
 Step 11: On the WelcomeViewController file, import Firebase on the top
 
 Step 12: Paste this code inside ViewDidLoad
+    
 
-_if Auth.auth().currentUser != nil {
+             if Auth.auth().currentUser != nil {
             performSegue(withIdentifier: "goToChat", sender: self)
-        }_
+        }
+  
 
 
 **Part 3 - RegisterViewController**
