@@ -64,12 +64,11 @@ Step 8: After finishing all the setup, go to your newly created project and go t
 Step 9: Navigate to your project directory and folder and initialize your pod using the command _pod init _in the terminal. 
 Open the new pod file and copy and paste the code under the Pods for Phoenix-Chat
 
-pod 'Firebase'
-pod 'Firebase/Auth'
-pod 'Firebase/Database'
-pod 'Firebase/Firestore'
-pod 'SVProgressHUD'
-pod 'ChameleonFramework'
+    pod 'Firebase'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Firestore'
+    pod 'ChameleonFramework'
 
 **Note**: Make sure you uncomment the _use_frameworks and target platform :ios, '9.0'_
 
