@@ -80,9 +80,10 @@ Step 11: On the WelcomeViewController file, import Firebase on the top
 
 Step 12: Paste this code inside ViewDidLoad
 
- if Auth.auth().currentUser != nil {
+_if Auth.auth().currentUser != nil {
             performSegue(withIdentifier: "goToChat", sender: self)
-        }
+        }_
+
 
 **Part 3 - RegisterViewController**
 
